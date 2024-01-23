@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+</head>
+<body>
+    <div class="dc1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta laborum ea adipisci, ab veritatis. Cumque pariatur minima nihil eos!</div>
+    <div class="dc2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minima!</div>
+    <div class="dc3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas doloremque animi sed numquam illum eius voluptate, itaque iure, reiciendis labore quaerat repellat esse accusantium odio saepe, corporis voluptatem repellendus quae autem quisquam quia inventore consectetur vel! Quo fugit amet tempore excepturi! Eos fugiat natus quis minima ex suscipit doloribus quo!</div>
+    <div class="dc4">Lorem, ipsum.</div>
+    <div class="dc5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem placeat dicta sed officiis, soluta architecto veniam, tempore dolor assumenda non iste expedita! Illum, quasi.</div>
+
+<style>
+/* Display Properties */
+/* default behaviour of div is block. so u can provide display-block or not both are same. */
+    .dc1{ background-color: #5494b2;
+        width:200px; height: 300px;padding:10px;margin: 20px;}
+    .dc2{ background: #27db5a;
+        width:100px; height: 150px;padding:5px;margin: 12px;}
+
+/* 1.inline-means height,width can't be specified.*/
+/* 
+    .dc1{ background: #ade90a; display: inline;
+        width:100px; height: 100px;} 
+    .dc2{ background: #27db5a; display: inline;}
+    .dc3{ background: #273fdb; display: inline;}
+    .dc4{ background: #c60d98; display: inline;}
+    .dc5{ background: #d82020; display: inline;}
+     */
+     
+    /* 2.block-means elements occupies seperate lines. & inline block means elements occupying some h,w and located adjacent to each other 
+    /* %line-height means height is relative to font of this content*/
+     .dc1{ background-color: #5494b2; display: inline-block;
+        width:100px; height: 500px;padding:10px;margin: 20px;
+        text-align: right;text-transform: uppercase;line-height: 200%;
+        font-family: 'Times New Roman', Times, serif;}
+    .dc2{ background: #27db5a; display:inline-block;
+        width:100px; height: 500px;padding:10px;margin: 20px;
+        text-align: justify;text-transform: lowercase;line-height: 50px;
+        font-family: 'Delicious Handrawn','Hanalei', cursive;}
+    .dc3{ background: #ff0717; display:inline-block;
+        width:100px; height: 500px;padding:10px;margin: 20px;
+        text-align: justify;text-transform: lowercase;line-height: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    .dc4{ background: #822262; display:inline-block;
+        width:100px; height: 500px;padding:10px;margin: 20px;
+        text-align: justify;text-transform: lowercase;line-height: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    .dc5{ background: #6c8405; display:inline-block;
+        width:100px; height: 500px;padding:10px;margin: 20px;
+        text-align: justify;text-transform: lowercase;line-height: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+         
+
+
+</style>
+</body>
+</html>

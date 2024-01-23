@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Property</title>
+    <!-- link for google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Tiro+Devanagari+Hindi:ital@1&display=swap" rel="stylesheet">
+    <!-- when u remove above link then rendered font will be different that is available in browser. -->
+    
+</head>
+<body>
+    <p style="font-family: 'Satisfy', cursive;">This is line to demonstrate google font.</p>
+    <p style="font-family: 'Tiro Devanagari Hindi', serif;">this is new line say hello</p>
+    
+    <div class="c4">last container</div>
+    <div id="id1" class="c1" >This is parent container.
+        <div class="c3" id="id3" style="margin-left: 50px;" >Container 3</div>
+        <div id="id2" class="c2" style="margin-left: 50px;" >This is child container.</div>
+        <div class="c5" style="margin-left: 50px;" ></div>
+    </div>
+</body>
+<style>
+/* position-fixed = element is fixed when we do scrolling.  */
+ /* #id1{height: 3000px;}#id2{ height:100px;position : fixed;}  */
+
+.c4{ background: #ee790b;}
+#id1{ background: #253ddd; font-size: 20px;
+    width: 800px;height: 450px; }
+#id3{background: #e89cdc;}
+.c5{background: #0beea6; width: 200px;height: 900px;}
+
+#id2{ background: #0bee4b;  /*this is child container*/
+/*relative font size*/
+    /* font-size: 5em; /* font-size = xtimes of parent size = 20*5px & go to computated section of style in inspect to see 40px */
+    /* font-size: 3rem; /* font-size = xtimes of html tag=16*3=80  */
+    /*see actual size on computed section & size of html in font*/
+
+/* relative width,height */
+    /* width: 50vw;height: 100vh; /*width=50% of viewport width means screen.=50% of screen width */
+    /* width: 50%;height: 70%;/*width=50% of parent width. */
+
+/*min,max-height,width = defines min,max size of height,width possible*/
+    /* max-height:50vh; */
+    /* width: 50vw;height: 80vh; /*here height of child becomes 50vh & can't become 80vh bcz max height allowed is 50vh. */
+    
+/*position property is used to move a container & by default position of all container is static that means we can't move. To move container specify position. */
+    /* height: 50px;width: 100px; */
+    /* position: relative; */
+    /*left:0px; /*left wrt parent means here c4 last container*/
+    /*top:200px;                        /*change this sizes in firefox*/
+    /*left means move container in right direction.Right = means move container in left. top=move container in down direction.*/
+    /*u can use left/right & top/bottom any 1 from both at once.*/
+    /*change in position of container doesn't changes position of other elements.*/
+
+/* absolute position means element is removed from document flow & it is positioned wrt it's 1st non-static element. If element doesn't have non-static parent then it is positioned wrt html tag.     */
+/*you will see that element is present below the green tag & it moves wrt 1st nonstatic parent tag means html tag*/
+    /* position: absolute;
+    left: 100px;
+    top: 500px; */
+
+
+}
+/* Z-index =the one who has high z index lies above that when scrolling. */
+.c4{z-index: 10;}
+#id2{z-index: 5;}
+/*means that in scrolling orange container will be above green container*/
+</style>
+</html>

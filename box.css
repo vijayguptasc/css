@@ -1,0 +1,42 @@
+/* Box Model = Layers : content-->padding-->-->border-->margin */
+
+
+.fc2{
+    width: 500px;height: 250px; /*width & size are for container.*/
+/* setting padding,marging,border  method1 -change this values manually in firefox*/
+    padding:0px; margin: 0px;/* don't put border=0 else you will not able to see seperation b/w containers. */
+
+    /* Method 2= top,right,bottom,left padding. logic-move clockwise direction */
+    /* padding: 0px 0px 0px 0px; */
+
+    /* method 3= top&left,right&left */
+    /* margin: 0px 0px; */
+
+/* setting border = width,style,color*/
+    /* padding: 50px;margin: 50px;
+    border: 20px solid rgb(5, 251, 66);
+    border-radius: 50px; */ /*creating rounds at border edges*/
+
+    /* you can place diff border att at different position */
+    border-width: 5px; border-color: #29f30a;
+   /* border-style: inset ; /*means all borders groove*/
+    border-style: groove solid ; /*  means top&down=solid,right&left=dashed */
+    /*border-style: dashed dotted double  ; /*top=dashed right&left=dotted left=double*/
+    /*border-style: inset none solid dotted ; /*top,right,bottom,left & don't use inset in combination it willn't give inset.*/
+
+}
+/* Marging collapse- */
+.fc1{ margin: 20px;} 
+.fc2{ margin: 50px;} 
+/* check that actual seperation b/w 2 containers is 50 & not 20px.& not that margin b/w that 2 element is only 50px but top margin of fc1 is 20px as you can see seperation b/w fc1 & website page. */
+
+/* Box sizing-Basically use to enclose a child container inside parent exactly. */
+
+/* display properties */
+
+
+
+
+
+
+

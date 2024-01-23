@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <!-- Note : don't leave any tag as <p> content */   bcz due to end */ code after this is not executed  --> 
+<style>
+
+/* CSS shorthand property */
+/*.dc2{ width:650px; height:400px; background : rgb(74, 236, 33) url('image/cat.jpg') repeat-x fixed right bottom ; } /*proper order*/
+/*.dc2{ width:650px; height:400px; background : rgb(74, 236, 33) url('image/cat.jpg') bottom right fixed repeat-x;} /*this works but try to use in proper order & width,height are of containeer. */
+
+.dc1{ width:700px; height:1000px;
+/* width,height defines limit for container div.& if height occupied by content for specific width is  more than container then content leaks. */
+background-image: url('image/home.jpg');  /* the img repeats in x & y direction. & size is bydefault as size of img. */
+
+/*repetition property*/
+    /*background-repeat: no-repeat;       /*img don't repeats. */
+    /*background-repeat: repeat-y;    /*img repeats in y direction. */
+    /*background-repeat: repeat-x;   */
+    /*background-repeat: space;    /* space keyword=in x dir repetion 5th img is a bit comed. In such cases to show only full img ,instead of showing some part of last img only 4 img are shown & remain space is equally distributed b/w spacing of images.  */
+    
+/* size properties */
+    width:800px;height: 600px; background-repeat: no-repeat; /*w,h of container*/
+    /*background-size: cover;  /*img fites & no empty space is available.img may crop down */
+    /*background-size: contain;  /*img fits but may have empty space. w & h changed in such way it fits in size & aspect remains constant. & if not fits then empty space. */
+    /*background-size: auto; /*display in original size-default size all imgs */
+    /*background-size: 500px 200px; /*width=500px height=400px. */
+    /*if you provide width/height any one then height/width other will automatically changed wrt aspect ratio.*/
+    /*background-size: 10% 60%;   /*width 10% of width parent container 
+    
+/* Position property */
+    /*background-size: 100px 100px; background-repeat: no-repeat; /*100*100 size*/
+    /* bg-size  is size of bg img & not size of div container. */
+    /*background-position: 20% 70% ; /*x=2/10 of width y=7/10 of height */
+    /*background-position: top; /*top = means xtop & centre = x/2,0 */
+    /*background-position: bottom; /*bottom = means xbottom & centre = x/2,height */
+    /*background-position: center; /*means x/2,y/2-centre */
+    /*background-position: left; /*left y & centre = */
+    /*background-position: right; /*top-means xtop & centre */
+    /*background-position: left top; /*top-means xtop & centre */
+    /*background-position: bottom right; /*top-means xtop & centre */
+
+/* Attachement  property */
+    /*background-image: url('image/darkimg.jpg');background-repeat: no-repeat;color: rgb(0, 255, 5); /* for attachement property consider*/
+    /*background-attachment: scroll; */
+    /* background-attachment: local; */
+    /* background-attachment: fixed; */
+} 
+</style>     
+</head>
+
+<body>
+
+<fieldset><div class="dc2">This is division class number 2.</div></fieldset>
+
+<fieldset><div class="dc1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit accusamus eum odio qui unde amet quidem tenetur ipsum soluta, delectus nostrum placeat mollitia recusandae libero debitis, excepturi quia fuga vero facilis maxime ratione consequatur voluptatum? Nobis veritatis vero itaque error iure perspiciatis tempora optio aliquam libero nesciunt repellendus ut nulla accusantium doloremque nihil, accusamus, explicabo eos ipsum quo! Quo soluta odio doloribus accusamus, error temporibus reprehenderit provident quae quia rem possimus unde veritatis molestias dolores quasi excepturi alias quisquam ea, reiciendis quos corrupti id, obcaecati pariatur tenetur? Porro officiis qui placeat doloribus, voluptatem labore quae reprehenderit a natus error quia laboriosam architecto assumenda delectus, dignissimos possimus pariatur eius tempore quos molestiae. Neque, tempore. Dolore consectetur non doloremque fuga doloribus, eos nobis. Corrupti non totam ex temporibus, iusto in dolorum velit labore libero. Maxime neque, libero quidem dolore omnis dicta, id nostrum doloremque ad, natus distinctio quaerat quam tempora? Dolor laudantium quas at dolorum, cum beatae saepe, in quia aut voluptates tempora repellendus animi sapiente sint, distinctio rerum? Ipsam iste corporis quibusdam officiis, hic sint asperiores molestias repellat, minus eum nemo quisquam magni consectetur atque, praesentium rerum beatae animi. Assumenda saepe a nihil quos? Unde dignissimos ab quis ullam itaque. Architecto quae hic nulla, voluptas debitis nemo repellendus doloremque iste officia. Iusto itaque asperiores quis quo dolores quidem repellendus sint corrupti placeat debitis. Officiis fugit, commodi repellat magnam alias optio laudantium vero saepe odit architecto sit veritatis impedit molestiae quo id quod deleniti necessitatibus iure doloremque, quos aliquid vitae? Odio aperiam, debitis inventore voluptatibus ad doloremque. Fugit molestias neque necessitatibus expedita officia, excepturi dolore exercitationem amet voluptates quo ad, consectetur harum eius perspiciatis, fuga optio corporis accusantium laborum commodi. Veritatis quas ducimus voluptate id, saepe quae necessitatibus ea vitae harum, repellendus fugiat, officiis natus? Dolorum, facilis. Nobis minima cumque ex, temporibus voluptate debitis illum ipsum illo cum tempore velit fugit impedit possimus. Vel consectetur doloribus autem provident cumque iure eos vero quis amet similique quod nihil soluta atque perspiciatis asperiores, nostrum sequi nesciunt voluptate blanditiis voluptas sit ratione. Non recusandae iste voluptas ex facilis cumque. Quos, nihil eveniet iste similique labore facilis fuga veniam nulla ex debitis accusantium perferendis cum corrupti commodi natus repudiandae. Suscipit corporis dignissimos quas quod accusamus numquam laboriosam itaque, ad ullam ab eius voluptatem minus. Quam quo eligendi tempora voluptatum veniam nihil quaerat accusamus doloremque, ullam optio dolores ipsa nisi! Quas earum ex praesentium repellat ab culpa iure magnam, suscipit odio sit perferendis animi ad unde blanditiis magni itaque, facilis officiis sequi pariatur. Ex, nam illo eum soluta reprehenderit dolor, aperiam ut quaerat eos iusto aut aliquam perspiciatis quae explicabo. Consequuntur laudantium alias molestiae veritatis dolores fugiat saepe repellat adipisci aut ut, perferendis, quos facilis quaerat, voluptas vitae culpa nemo quae error iusto illum placeat! In praesentium error quae esse corrupti qui. Eveniet voluptates facilis aperiam at odit, ipsam repellat cupiditate iusto fugit sed? Maiores facilis est veritatis asperiores nobis quibusdam ad aliquam omnis at. Neque perspiciatis vitae provident voluptate exercitationem quod libero corrupti quis nemo reiciendis.
+</div></fieldset>
+
+</body>
+</html>
+
+

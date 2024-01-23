@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+</head>
+<!-- In css we mostly use class,we give property to class & reuses this class. -->
+<!-- Shortcurts bgc=background color, bgs=bg size m0p0 = margin:0; padding:0;  -->
+
+<body>
+    <fieldset class="fc1">This is first Box. <br> Box properties are applied to Box 2.</fieldset>
+
+    <fieldset class="fc2">
+        <div id="did1" class="dc1">
+            <fieldset>
+                <p id="pid1" class="pc1" title="vijay">This is Box 2.</p>
+                <!-- hover-long hover to see title  -->
+                <p id="pid2" class="pc2">Line 2</p>
+                <p id="pid3" class="pc3" style="background: #ee07db;">To demonstrate basic css properties.</p>
+            </fieldset>
+            <!-- this is called Inline style & it has most priority if inline style is their else overwritten style is applied..-->
+        </div>
+        <fieldset>
+            <div class="dc2">New div to demonstrate Box sizing</div>
+        </fieldset>
+    </fieldset>
+
+    <style>
+        /* this is called internal style */
+
+        p[title] {
+            background: #1b08f4;
+        }
+
+        /* background color of pid1 tag */
+        .pc2 {
+            background-color: #e6c0e2;
+            color: rgb(30, 19, 231);
+        }
+
+        /* color means text color */
+        #pid3 {
+            background: #56c918;
+        }
+
+        /* this doesn't works bcz priority is inline style > internal style > external css */
+
+        .sc1 {
+            background: #d8e0ad;
+            color: #52ed67;
+        }
+
+        /* changes applies to this 3 span bcz have same class name. */
+        #sid3 {
+            background: #ea6274;
+        }
+    </style>
+
+
+    <fieldset class="fc3">
+        <!-- adding button for new pages -->
+        <a href="2.image.html" target="_blank"><input type="button" value="Image property" id="bid1"></a>
+        <a href="3.display&textProperties.html" target="_blank"><input type="button" value="Text & Display" id="bid2"></a>
+        <a href="4.position&fontProperties.html" target="_blank"><input type="button" value="Size,Position property"
+                id="bid3"></a>
+        <!-- <a href="image.html" target="_blank"><input type="button" value="Image property" id="bid1"></a> -->
+        <br>
+
+        <span class="sc1" id="sid1">This is Box 3</span>
+        <span class="sc1" id="sid2">This is Span2</span>
+        <span class="sc1" id="sid3">This is Span3</span>
+        <span class="cx" id="idx">
+            <p style="display: inline-block; border: 1px solid rgb(255, 109, 4); width:200px" id="idy" class="cy">HI
+                Hello</p>
+        </span>
+    </fieldset>
+
+    <style>
+        /* css selectors priority */
+        /* this doesn't works-bcz priority of id selector
+        > attribute selector > class selector > element selector */
+        /* .pc1 {
+            background-color: #2db726;
+            text-align: center;
+        }*/
+        /* note- priority is for overwritten css property is only. rest css property which are not common in both are both applied to same element. - here text align applied */
+
+
+        /* different css selectors */
+
+        /* 1.attribute selector- element[attribute] */
+        /* p[id="pid2"] {
+            text-align: right;
+            background-color: aqua;
+            color: rgb(242, 5, 17);
+        } */
+
+        /* 2.grouping of selectors - sel1,sel2{--} */
+        /* #pid1,.pc2{
+            text-align: end;
+        } */
+
+        /* 3.descendent combinator - parentSelec anyLevelChildSelecotr */
+        /* selects a element having id idx & having any level parent with class fc3 */
+        /* .fc3 #idx {
+            background-color: aqua;
+        } */
+
+        /* 4.Child selector-parentSelc > childSelc - selects 1st level child of parent */
+        /*  */
+        /* .fc3>#sid1 {
+            background-color: #ee07db;
+        } */
+
+        /* 5.chaining of selectors - elementSelector1Sel2Sel3 */
+        /* p#idy.cy {
+            color: #ee0707;
+            background-color: #a6fcd4;
+        } */
+    </style>
+
+    <!-- to create seperate js file in html - <script src="index.js"></script> 
+    This doesn't works : <style src="index.css"></style>-->
+    <link rel="stylesheet" href="box.css"><br> BOX MODEL
+    <!-- <style>body{background-color:blueviolet}</style> to make bg colored. -->
+</body>
+
+</html>
